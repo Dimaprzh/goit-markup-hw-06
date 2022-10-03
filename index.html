@@ -79,7 +79,7 @@
               <div role="group" class="name-group">
                 <label for="text" class="label-form">Ім'я</label>
                 <div class="input-wrap">
-                  <input type="text" class="input-form">
+                  <input type="text" class="input-form" id="text">
                   <svg class="img-input">
                     <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
                   </svg>
@@ -89,7 +89,7 @@
               <div role="group" class="name-group">
                 <label for="tel" class="label-form" name="tel">Телефон</label>
                 <div class="input-wrap">
-                  <input type="tel" class="input-form" name="tel">
+                  <input type="tel" class="input-form" name="tel" id="tel">
                   <svg class="img-input">
                     <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                   </svg>
@@ -99,7 +99,7 @@
               <div role="group" class="name-group">
                 <label for="mail" class="label-form" name="mail">Пошта</label>
                 <div class="input-wrap">
-                  <input type="mail" class="input-form" name="mail">
+                  <input type="mail" class="input-form" name="mail" id="mail">
                   <svg class="img-input">
                     <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
                   </svg>
@@ -107,15 +107,13 @@
               </div>
 
               <div role="group" class="name-group">
-                <label for="text" class="label-form" name="coment">Коментар</label>
+                <label for="coment-text" class="label-form" name="coment" >Коментар</label>
                 <div class="input-wrap">
                   <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Введіть текст" class="coment-wrap"></textarea>
                 </div>
               </div>
 
               <div class="accept">
-               
-                
                 <input type="checkbox" name="accept" id="accept" class="visually-hidden">
                 
                 <label for="accept" class="accept-wrap">
@@ -508,10 +506,10 @@
           </ul>
         </div>
         <div role="group" class="submit-wrapper">
-          <p class="submit-dscr">Підпишіться на розсилку</p>
+          
           <div class="footer-submit-btn" >
-          <input type="mail"  class="mail-input" >
-          <label for="mail" name="mail" class="mail-lable">E-mail</label>
+          <input type="mail"  class="mail-input" placeholder="E-mail" id="user-mail">
+          <label for="user-mail" name="mail" class="submit-dscr" >Підпишіться на розсилку</label>
           
             <button type="submit" class="btn-submit">Підписатися</button>
             <svg class="icon-submit">
